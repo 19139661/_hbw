@@ -362,4 +362,9 @@
 }
 
 
-
+/* utility plus */
+.all_centered{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
