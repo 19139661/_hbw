@@ -1,0 +1,37 @@
+@import url(./style.css);
+
+@media screen and (max-width: 400px) {
+    body {
+        background-color: var(--white);
+    }
+    .header{
+        flex-direction: column;
+    }
+    .nav-btn {
+        padding: 0px;
+        color: var(--black);
+        text-decoration: none;
+    }
+    .hero {
+        flex-direction: column-reverse;
+        gap: var(--g-10) !important;
+        padding-inline: var(--g-10);
+    }
+
+    .web-title {
+        font-size: var(--mb-heading) !important;
+    }
+
+    .web-sub {
+        font-size: var(--mb-sub);
+    }
+
+    .web-para {
+        font-size: var(--mb-para) !important;
+    }
+
+    .hero-content,
+    figure {
+        width: 100% !important;
+    }
+}

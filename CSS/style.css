@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oxygen", sans-serif;
+}
+
+:root{
+    /* typo graphy */
+    /* font size */
+    --dk-heading: 48px;
+    --dk-sub: 24px;
+    --dk-para: 16px;
+    --small-dk-para: 12px;
+    --mb-heading: 36px;
+    --mb-sub: 20px;
+    --mb-para: 13px;
+    --small-mb-para: 10px;
+
+    /* thickness */
+    --light: 300;
+    --bold: 700;
+
+    /* color */
+    --main: #41AEEF;
+    --black: #111111;
+    --white: #ffffff;
+
+    /* gaps */
+    --g-100: 100px;
+    --g-50: 50px;
+    --g-30: 30px;
+    --g-20: 20px;
+    --g-15: 15px;
+    --g-10: 10px;
+}
+.header{
+    width: 100%;
+    gap: var(--g-10);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav{
+    display: flex;
+    gap: var(--g-10);
+    align-items: center;
+}
+nav ul{
+    display: flex;
+    gap: var(--g-10);
+    list-style: none;
+}
+nav ul li > a{
+    text-decoration: none;
+    color: var(--black);
+}
+nav ul li > a:hover{
+    text-decoration: underline;
+}
+.nav-btn {
+    padding: 10px 5px;
+    background-color: var(--black);
+    color: var(--white);
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--g-100);
+    padding-block: var(--g-10);
+}
+
+.hero-content{
+    display: grid;
+    gap: var(--g-10);
+}
+.hero-content > .btn-group{
+    padding-block: var(--g-10);
+}
+.web-title > span{
+    color: var(--main);
+}
+
+.hero-content,
+figure{
+    width: 50%;
+}
+figure > img{
+    width: 100%;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: var(--g-10);
+}
+
+.creadit{
+    text-transform: capitalize;
+}
+
+.grid-box-one{
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    gap: var(--g-20);
+}
+
+article{
+    text-align: left;
+    display: grid;
+    gap: var(--g-10);
+}
+
+.web-flex-box{
+    width: 100%;
+    padding: var(--g-10);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: var(--g-10);
+}
+
+.web-box{
+    width: 250px;
+    display: grid;
+    justify-content: center;
+    gap: var(--g-10);
+    border: 2px solid var(--black);
+    padding: var(--g-10);
+    border-radius: 10px;
+}
+.job-heading{
+    background-color: var(--main);
+    color: var(--black);
+    padding: var(--g-10);
+    font-size: var(--small-dk-para);
+}
+
+.job-box{
+    width: 100%;
+    padding: 20px 10px;
+    border: 2px solid var(--black);
+    display: grid;
+    justify-items: start;
+    gap: var(--g-15);
+}
+
+form{
+    width: 500px;
+    padding: 10px;
+    display: grid;
+    gap: 10px;
+  }
+  
+  form > input{
+    width: 100%;
+    padding-block: 12.5px;
+    padding-inline: 5px;
+    border: 2px solid black;
+    background-color: transparent;
+  }
+  form > textarea{
+    width: 100%;
+    padding-block: 12.5px;
+    padding-inline: 5px;
+    border: 2px solid black;
+    background-color: transparent;
+    height: 200px;
+    resize: none;
+  }
+  
+  form > input::placeholder,
+  form > textarea{
+    color: #000;
+  }
+  form > input:focus,
+  form > textarea{
+    outline: none;
+  }
+  
+  form button{
+    width: 100px;
+    padding-block: 12.5px;
+    background-color: #000000;
+    border: none;
+    color: #ffffff;
+  }

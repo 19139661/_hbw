@@ -1,0 +1,89 @@
+@import url(./style.css);
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--white);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    padding: var(--g-10) var(--g-100);
+}
+
+section {
+    width: 100%;
+}
+
+.web-title {
+    font-size: var(--dk-heading);
+    color: inherit;
+    font-weight: var(--bold);
+}
+
+.web-sub {
+    font-size: var(--dk-sub);
+    color: inherit;
+}
+.web-para{
+    font-size: var(--dk-para);
+    font-weight: var(--light);
+    text-align: left;
+}
+.web-btn-fill {
+    padding: 10px 5px;
+    background-color: var(--black);
+    color: var(--white);
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.web-btn-main {
+    padding: 10px 5px;
+    background-color: var(--main);
+    color: var(--black);
+    text-decoration: none;
+    text-transform: capitalize;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.web-btn-outline {
+    padding: 10px 5px;
+    outline: 1px solid var(--black);
+    color: var(--black);
+    text-decoration: none;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+footer{
+    width: 100%;
+    padding: var(--g-20);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-title{
+    font-size: var(--dk-heading);
+    font-weight: var(--bold);
+}
+
+.page-title::after{
+    content: "";
+    width: 100%;
+    height: 5px;
+    background-color: var(--main);
+    display: block;
+}
+
+.confirm-box{
+    width: 500px;
+    display: grid;
+    gap: var(--g-10);
+}
